@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo Page</title>
+  </head>
+  <body>
+    <div class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__burger">
+          <img src="http://placehold.it/23x21" alt="logo">
+        </div>
+        <div class="main-nav__list">
+          <div class="main-nav__item">Главная</div>
+          <div class="main-nav__item">фото и видео</div>
+          <div class="main-nav__item">Форма отзыва</div>
+          <div class="main-nav__item">HTML academy</div>
+        </div>
+        <div class="main-nav__close">
+          <img src="http://placehold.it/23x22" alt="logo">
+        </div>
+      </nav>
+      <div class="page-header__logo">
+        <img src="http://placehold.it/102x83" alt="logo">
+      </div>
+    </div>
+    <section class="promo">
+      <div class="promo__logo">
+        <img src="http://placehold.it/282x214" alt="logo">
+      </div>
+      <h1 class="promo__title">Sedona</h1>
+      <p class="promo__text">"Because the Grand Canyon sucks!"</p>
+    </section>
+    <section class="intro">
+      <div class="intro__title page-title">
+        Оставьте свой отзыв
+      </div>
+      <div class="intro__text">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+      </div>
+    </section>
+    <form class="feedback" action="https://echo.htmlacademy.ru/" method="POST">
+      <fieldset class="introduction">
+        <div class="page__title">
+          Представьтесь:
+        </div>
+        <label class="input"> Имя*:
+          <input type="text">
+        </label>
+        <label class="input"> Фамилия*:
+          <input type="text">
+        </label>
+        <label class="input"> Отчество*:
+          <input type="text">
+        </label>
+      </fieldset>
+      <fieldset class="contacts">
+        <div class="page__title">
+          Контактная информация:
+        </div>
+        <label class="input"> Контактный телефон*:
+          <input type="text">
+        </label>
+        <label class="input"> Электронная почта*:
+          <input type="email">
+        </label>
+      </fieldset>
+      <fieldset class="impression">
+        <div class="page__title">
+          Ваше Общее впечатление:
+        </div>
+        <label class="radio">
+          <input name="impression" type="radio">
+          <span class="radio__indicator"></span>
+          Скорее положительное
+        </label>
+        <label class="radio">
+          <input name="impression" type="radio">
+          <span class="radio__indicator"></span>
+          Скорее отрицательное
+        </label>
+        <label class="radio">
+          <input name="impression" type="radio">
+          <span class="radio__indicator"></span>
+          Затрудняюсь ответить
+        </label>
+      </fieldset>
+      <fieldset class="landmark">
+        <div class="page__title">
+          посещенные достопримечательности:
+        </div>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__indicator"></span>
+          Мост Дьявола
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__indicator"></span>
+          Слайд-парк
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__indicator"></span>
+          Гора-Колокол
+        </label>
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="checkbox__indicator"></span>
+          Красные скалы
+        </label>
+      </fieldset>
+      <fieldset class="emotions">
+        <div class="page__title">
+          Опишите свои эмоции:
+        </div>
+        <textarea class="textarea" placeholder="Опишите подробно все свои восторги "></textarea>
+      </fieldset>
+      <button class="feedback__btn btn" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+    </form>
+    <div class="page-footer">
+      <div class="page-footer__tag">
+        #visitSEDONA
+      </div>
+      <div class="social">
+        <div class="social__list">
+          <li class="social__item">Twitter</li>
+          <li class="social__item">Facebook</li>
+          <li class="social__item">Youtube</li>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright__text">
+          Разработано
+        </div>
+        <div class="copyright__logo">
+          <img src="http://placehold.it/27x34" alt="logo">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
