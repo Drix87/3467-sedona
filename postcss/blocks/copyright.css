@@ -1,0 +1,17 @@
+.copyright {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 30px;
+
+  &::after {
+    content: '';
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background: url('../img/htmlacademy.svg') no-repeat;
+    background-size: 27px 34px;
+  }
+}
