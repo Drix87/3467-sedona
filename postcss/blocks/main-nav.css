@@ -1,3 +1,11 @@
+@impor
+
+.main-nav {
+  @mixin MQ desktop {
+    width: 400px;
+  }
+}
+
 .main-nav__list {
   @mixin list-reset;
 }

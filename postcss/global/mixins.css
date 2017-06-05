@@ -35,3 +35,39 @@
   width: 1px;
   white-space: nowrap;
 }
+
+$mobile: 400px;
+$tablet: 768px;
+$desktop: 1024px;
+
+@define-mixin MQ $canvas {
+  @if $canvas == mobile {
+    @media only screen and (min-width: $mobile) and (max-width: $tablet - 1) { @mixin-content; }
+  }
+  @else if $canvas == tablet {
+    @media only screen and (min-width: $tablet) and (max-width: $desktop - 1) { @mixin-content; }
+  }
+  @else if $canvas == desktop {
+    @media only screen and (min-width: $desktop) { @mixin-content; }
+  }
+
+  @else if $canvas == mobilePlus {
+    @media only screen and (min-width: $mobile) { @mixin-content; }
+  }
+  @else if $canvas == tabletPlus {
+    @media only screen and (min-width: $tablet) { @mixin-content; }
+  }
+  @else if $canvas == desktopPlus {
+    @media only screen and (min-width: $desktop) { @mixin-content; }
+  }
+
+  @else if $canvas == mobileNeg {
+    @media only screen and (max-width: $mobile) { @mixin-content; }
+  }
+  @else if $canvas == tabletNeg {
+    @media only screen and (max-width: $tablet) { @mixin-content; }
+  }
+  @else if $canvas == desktopNeg {
+    @media only screen and (max-width: $desktop) { @mixin-content; }
+  }
+}
